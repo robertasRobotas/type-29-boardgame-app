@@ -1,0 +1,25 @@
+.header {
+  background-color: cadetblue;
+  height: 120px;
+}
+
+.main {
+  background-color: rgb(119, 95, 160);
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.main div {
+  width: 200px;
+  height: 200px;
+  background-color: bisque;
+  border-radius: 8px;
+}
+
+.footer {
+  background-color: rgb(160, 135, 95);
+  height: 120px;
+}
