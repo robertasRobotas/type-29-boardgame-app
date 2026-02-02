@@ -1,17 +1,26 @@
-import styles from "../styles/main.module.css";
+import Header from "../components/Header/Header";
+import Main from "../components/Main/Main";
+import Footer from "../components/Footer/Footer";
+import { useState } from "react";
 
-const Main = () => {
+const Page = () => {
+  const [name, setName] = useState(0);
+
   return (
     <>
-      <header className={styles.header}>1</header>
-      <main className={styles.main}>
-        <div></div>
-        <div></div>
-        <div></div>
-      </main>
-      <footer className={styles.footer}>3</footer>
+      <button
+        onClick={() => {
+          setName(name + 1);
+        }}
+      >
+        Click
+      </button>
+      {name}
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 };
 
-export default Main;
+export default Page;
