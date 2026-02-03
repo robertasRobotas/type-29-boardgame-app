@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-const Card = () => {
+const Card = ({ img, title }) => {
   return (
     <div className={styles.main}>
-      <div>asdasd asdasd</div>
-      <div></div>
+      <img src={img} />
+      <h3 className={styles.title}>{title}</h3>
     </div>
   );
 };
