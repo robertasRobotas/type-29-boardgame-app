@@ -12,7 +12,6 @@ const Page = () => {
       "https://695dfc9f2556fd22f676eeca.mockapi.io/games",
     );
 
-    console.log(response.data);
     setGames(response.data);
   };
 
@@ -23,7 +22,7 @@ const Page = () => {
   return (
     <>
       <Header />
-      <Main data={games} />
+      <Main data={games} setData={setGames} />
       <Footer />
     </>
   );

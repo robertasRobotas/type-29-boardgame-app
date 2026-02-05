@@ -1,8 +1,10 @@
 .main {
   background-color: rgb(119, 95, 160);
-  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   gap: 2rem;
 }

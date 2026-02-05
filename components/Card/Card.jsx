@@ -1,13 +1,9 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-const Card = ({ img, title }) => {
-  const onClickCard = () => {
-    console.log(title);
-  };
-
+const Card = ({ id, img, title, onClick }) => {
   return (
-    <div className={styles.main} onClick={onClickCard}>
+    <div className={styles.main} onClick={onClick}>
       <img src={img} />
       <h3 className={styles.title}>{title}</h3>
     </div>
