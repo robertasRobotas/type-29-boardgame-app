@@ -3,6 +3,7 @@ import axios from "axios";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
 import Footer from "../components/Footer/Footer";
+import ToDo from "@/components/ToDo/ToDo";
 
 const Page = () => {
   const [games, setGames] = useState();
@@ -21,9 +22,10 @@ const Page = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header />
       <Main data={games} setData={setGames} />
-      <Footer />
+      <Footer /> */}
+      <ToDo />
     </>
   );
 };
